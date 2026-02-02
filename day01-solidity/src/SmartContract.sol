@@ -25,7 +25,39 @@ struct informations{
 }
 
 informations public myInformations({
+    /**
+ * @notice Returns halfAnswerOfLife
+ * @dev TODO: Return the value of halfAnswerOfLife
+ */
+function getHalfAnswerOfLife() public view returns (uint256) {
+    // TODO: Implement
     
+}
+
+/**
+ * @notice Returns the contract address (internal)
+ * @dev TODO: Return myEthereumContractAddress
+ */
+function _getMyEthereumContractAddress() internal view returns (address) {
+    // TODO: Implement
+}
+
+/**
+ * @notice Returns PoCIsWhat (external only)
+ * @dev TODO: Return PoCIsWhat with memory keyword for string
+ */
+function getPoCIsWhat() external view returns (string memory) {
+    // TODO: Implement
+}
+
+/**
+ * @notice Sets _areYouABadPerson (internal)
+ * @dev TODO: Update the internal variable
+ */
+function _setAreYouABadPerson(bool _value) internal {
+    // TODO: Implement
+}
+
 })
 
 
