@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+
 contract SmartContract {
     // Your code here
     uint256 public halfAnswerOfLife = 21;
@@ -24,14 +25,14 @@ struct informations{
     roleEnum role;
 }
 
-informations public myInformations({
+informations public myInformations;
     /**
  * @notice Returns halfAnswerOfLife
  * @dev TODO: Return the value of halfAnswerOfLife
  */
 function getHalfAnswerOfLife() public view returns (uint256) {
     // TODO: Implement
-    
+    return halfAnswerOfLife;
 }
 
 /**
@@ -40,6 +41,8 @@ function getHalfAnswerOfLife() public view returns (uint256) {
  */
 function _getMyEthereumContractAddress() internal view returns (address) {
     // TODO: Implement
+    return address(this);
+
 }
 
 /**
@@ -48,6 +51,7 @@ function _getMyEthereumContractAddress() internal view returns (address) {
  */
 function getPoCIsWhat() external view returns (string memory) {
     // TODO: Implement
+    return PoCIsWhat;
 }
 
 /**
@@ -56,9 +60,17 @@ function getPoCIsWhat() external view returns (string memory) {
  */
 function _setAreYouABadPerson(bool _value) internal {
     // TODO: Implement
+    _areYouABadPerson = _value;
 }
 
-})
+function editMyCity(string calldata _newCity) public {
+    // TODO: Update myInformations.city
+    
+}
 
-
+function getMyFullName() public view returns (string memory) {
+    // TODO: Concatenate firstName + " " + lastName
+    // Hint: Use abi.encodePacked() to concatenate strings
+    // return string(abi.encodePacked(str1, " ", str2));
+}
 }
